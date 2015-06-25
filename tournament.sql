@@ -5,9 +5,11 @@
 --
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
-
-create table players(id serial, player_names text);
-create table records(id int, wins int, matches int);
+DROP DATABASE IF EXISTS tournament;
+CREATE DATABASE tournament;
+\c tournament
+create table players(id serial primary key, player_names text);
+create table records(id int primary key, wins int, matches int);
 
 -- It is not necessery to create two tables because I think if table is created like 'create table games(id serial, player_names text, wins int, matches int)', 
 -- it is in bcnf form and no multivaued dependency can be found in it. But due to deleteMatches and deletePlayers function, it looks reasonable to split it into two tables. 
