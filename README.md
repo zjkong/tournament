@@ -14,7 +14,13 @@ and you'll get a Linux shell prompt. When you want to log out, type exit at the 
 To turn the virtual machine off (without deleting anything), type vagrant halt. If you do this, 
 you'll need to run vagrant up again before you can log into it.
 
-5 Find tournament file through git bash and run 'python tournament_test.py', you will find that all tests passed.
+5 Before running application, you could run "psql" command in gitbash and do some database operation in it.
+"\c database_name" allows you to connect a database you want(in this project, database name is tournament)
+"\dt" tells you the how many table in the database.
+"\d+ table_name" tells you the schema of each table.
+You can also use insert, select, delete and other operations to update database and tables.
 
-6 If you have installed python, you can open tournament.py and find what each function do to the database.
+6 Find tournament file through git bash and run 'python tournament_test.py', you will find that all tests passed.
+
+7 If you have installed python, you can open tournament.py and find what each function do to the database.
 You could also find database schema from tournament.sql.
