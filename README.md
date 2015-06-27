@@ -18,6 +18,7 @@ you'll need to run vagrant up again before you can log into it.
 "\c database_name" allows you to connect a database you want(in this project, database name is tournament)
 "\dt" tells you the how many table in the database.
 "\d+ table_name" tells you the schema of each table.
+"psql -f <schema>.sql" allows you to import sql schema.
 You can also use insert, select, delete and other operations to update database and tables.
 
 6 Find tournament file through git bash and run 'python tournament_test.py', you will find that all tests passed.
